@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable prettier/prettier */
 import {createStackNavigator} from 'react-navigation-stack';
 import {createAppContainer} from 'react-navigation';
 import PostScreen from '../PostScreen';

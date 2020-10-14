@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, {Component} from 'react';
 import {View, Text} from 'react-native';
 
@@ -8,9 +9,12 @@ class PostDetails extends Component {
   }
 
   render() {
+    const {navigation} = this.props;
+    const DATA = navigation.getParam('content');
+    console.log(DATA);
     return (
       <View>
-        <Text> PostDetails </Text>
+        <Text> {JSON.stringify(DATA)} </Text>
       </View>
     );
   }
